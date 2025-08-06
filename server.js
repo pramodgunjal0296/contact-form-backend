@@ -9,14 +9,8 @@ const contactRoutes = require('./routes/contact');
 dotenv.config();
 
 const app = express();
-const corsOptions = {
-  origin: "https://pramod-gunjal.vercel.app",
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true,
-};
-
-app.use(cors(corsOptions));
-
+app.use(cors());
+app.use(express.json());
 
 app.use(bodyParser.json());
 
