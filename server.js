@@ -10,7 +10,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: 'https://pramod-gunjal.vercel.app',
+  origin: 'https://pramodgunjalportfolio-ayajyobi0-pramodgunjal0296s-projects.vercel.app',
   credentials: true,
 }));
 app.use(express.json());
