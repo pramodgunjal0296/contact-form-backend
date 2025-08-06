@@ -21,7 +21,7 @@ router.post('/', async (req, res) => {
 
     const mailOptions = {
       from: email,
-      to: "pramodgunjal2023@gmail.com",
+      to: process.env.RECEIVER_EMAIL,
       subject: 'From PortFolio You Received contact Request',
       text: `You received a new message from:
 Name: ${name}
